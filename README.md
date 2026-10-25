@@ -15,3 +15,6 @@ CCs e carregamento do template.
   e a camada de Latência. A DAW é um front-end que conversa com ele, e não reescreve nada disso.
 - Filosofia de todo produto Regni: **presets prontos**, por lib e por instrumento, e o usuário **customiza tudo e
   salva os próprios presets**.
+
+Mapa de todos os problemas e de onde cada solução mora (plugin / Ensemble / DAW de MIDI):
+`~/dev/regni-ensemble/docs/MAPA-DE-PROBLEMAS.md`.
