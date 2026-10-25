@@ -20,8 +20,12 @@ Cada articulação de uma sample library demora um tempo diferente para "soar". 
 - a região do teclado;
 - a lib e o patch.
 
-**O que acontece hoje.** Ao vivo ninguém consegue eliminar esse atraso, porque o sample não toca antes da tecla.
-Por isso o músico **toca adiantado, de ouvido**. A DAW grava a nota onde a tecla foi apertada, ou seja, adiantada
+**Ao vivo dá para melhorar, sim** (ver o Latencinator, `~/dev/regni-midi-fx/plugins/latencinator/README.md`):
+modo Low Latency (a lib começa o sample mais tarde, ex. Pacific CC14 → LV), patch rápido × realista, compensação
+da primeira nota de legato, por velocity e por dinâmica. O preço é realismo; por isso são modos (Low Latency /
+Realistic / Default da lib), trocados num botão só, sem depender do transporte.
+
+**O que acontece hoje sem isso.** O músico **toca adiantado, de ouvido**. A DAW grava a nota onde a tecla foi apertada, ou seja, adiantada
 e fora do grid. A solução comum é um *track delay* negativo, que só age no playback e é um número por track, não por
 articulação **(verificar: Logic, Cubase, Studio One, Dorico, Reaper)**. O compositor acaba quantizando e
 arrastando nota na mão.
@@ -32,6 +36,7 @@ arrastando nota na mão.
 - **No playback, mandar a nota adiantada** exatamente pela mesma quantia.
 - O grid passa a mostrar a intenção musical, e a física da lib fica escondida.
 - Uma opção para quem *não* toca adiantado (aí não há compensação na gravação, só no playback).
+- Gravar em Low Latency e tocar de volta em Realistic já põe a nota quase no grid; a DAW corrige o resíduo.
 - Os delays vêm de **presets prontos por lib** (medidos por nós), com regras (transição, velocity, dinâmica,
   região), e o usuário edita e salva os próprios.
 
