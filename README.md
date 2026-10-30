@@ -1,20 +1,20 @@
-# Regni MIDI DAW (nome provisório)
+# Regni MIDI DAW (working title)
 
-Uma DAW **só de MIDI**, feita para quem compõe com sample libraries, principalmente orquestra virtual.
-Não tenta competir com o Logic, o Cubase ou o Pro Tools em áudio. Faz uma coisa: tirar do caminho do compositor
-os problemas que as DAWs comuns nunca resolveram porque o foco delas era outro.
+A **MIDI-only** DAW, built for people who compose with sample libraries, mainly virtual orchestra.
+It does not try to compete with Logic, Cubase or Pro Tools on audio. It does one thing: get out of the composer's way
+the problems that general-purpose DAWs never solved, because their focus was elsewhere.
 
-Status: **ideia registrada em 25/10/2026, nada implementado.** A ideia completa está em [IDEIA.md](IDEIA.md).
+Status: **idea written down on 2026-10-25, nothing implemented yet.** The full idea is in [IDEA.md](IDEA.md).
 
-## Em uma frase
-O grid mostra a **intenção musical**. A DAW cuida da física das libs: latência de cada articulação, keyswitches,
-CCs e carregamento do template.
+## In one sentence
+The grid shows the **musical intention**. The DAW takes care of the libraries' physics: per-articulation latency,
+keyswitches, CCs and template loading.
 
-## Relação com os outros produtos Regni
-- **Regni Ensemble** (`~/dev/regni-ensemble`) é o motor: hospeda os instrumentos, faz o Switchboard (articulações)
-  e a camada de Latência. A DAW é um front-end que conversa com ele, e não reescreve nada disso.
-- Filosofia de todo produto Regni: **presets prontos**, por lib e por instrumento, e o usuário **customiza tudo e
-  salva os próprios presets**.
+## Relation to the other Regni products
+- **Regni Ensemble** is the engine: it hosts the instruments, runs the Switchboard (articulations) and the Latency
+  layer. The DAW is a front end that talks to it, and does not rewrite any of that.
+- The philosophy of every Regni product: **ready-made presets**, per library and per instrument, and the user
+  **customizes everything and saves their own presets**.
 
-Mapa de todos os problemas e de onde cada solução mora (plugin / Ensemble / DAW de MIDI):
-`~/dev/regni-ensemble/docs/MAPA-DE-PROBLEMAS.md`.
+A map of all the problems and where each solution lives (plugin / Ensemble / MIDI DAW) is kept in the Regni Ensemble
+documentation (`docs/MAPA-DE-PROBLEMAS.md`).
